@@ -1,0 +1,67 @@
+Problema,Possíveis causas,20.000km,50.000km,100.000km+
+Ar condicionado fraco,"Filtro sujo, Compressor com mal funcionamento, Mal funcionamento da ventoinha",0.3,0.5,0.7
+Ar-condicionado não funciona,Filtro de ar entupido,0.2,0.4,0.6
+Barulho estranho no motor,"Correia dentada desgastada, Problemas no alternador",0.2,0.5,0.8
+Barulho no motor,"Pressão incorreta, Correia dentada desgastada, Óleo baixo",0.2,0.4,0.7
+Carro puxando para um lado,"Desalinhamento, Pressão dos pneus desiguais",0.3,0.5,0.6
+Dificuldade na ignição,Bateria fraca,0.3,0.6,0.8
+Direção pesada,"Fluido da direção hidráulica baixo, Alinhamento incorreto, Correia da direção hidráulica solta",0.2,0.4,0.7
+Falha no indicador de combustível,"Boia encharcada, Sensor queimado",0.1,0.3,0.5
+Falha no sistema de freios,Pastilhas de freio gastas,0.3,0.5,0.7
+Fumaça branca pelo escapamento,"Junta do cabeçote queimada, Sensor de oxigênio defeituoso, Problema no motor",0.1,0.4,0.8
+Luz de alerta acesa,"Sensor de oxigênio defeituoso, Catalisador com problema, Falha no sistema de injeção eletrônica",0.2,0.5,0.9
+Luzes do painel piscando,"Fusível queimado, Alternador com problema, Correia solta",0.2,0.4,0.6
+Meu carro não está ligando,"Bateria descarregada, Cabo da bateria solto",0.3,0.5,0.8
+Motor falhando,Velas de ignição desgastadas,0.2,0.5,0.7
+Perda de potência,Módulo de controle do motor,0.1,0.4,0.6
+Pneu esvaziando muito rápido,Pneu furado,0.2,0.3,0.5
+Pneus desgastando rapidamente,Alinhamento incorreto,0.3,0.5,0.7
+Problemas ao engatar marcha,"Fluido da embreagem baixo, Vazamento de óleo na caixa de câmbio, Quebra do cabo de embreagem",0.1,0.3,0.6
+Ruído na suspensão,Amortecedor danificado,0.2,0.4,0.7
+Ruídos e vibrações no pedal de freio,"Pastilhas desgastadas, Discos empenados, Tambores empenados",0.3,0.5,0.8
+Saindo fumaça do capô,"Superaquecimento, Mangueiras ressecadas ou furadas",0.2,0.4,0.6
+Temperatura do motor muito alta,"Líquido de arrefecimento baixo, Thermostato com defeito, Radiador com vazamento",0.1,0.3,0.5
+Vibração ao dirigir,"Desbalanceamento das rodas, Amortecedor danificado",0.2,0.4,0.7
+Dificuldade ao trocar de marcha,"Fluido da transmissão baixo, Embreagem desgastada",0.1,0.3,0.6
+Desgaste irregular nos pneus,"Desbalanceamento das rodas, Pressão dos pneus incorreta, Alinhamento incorreto",0.3,0.5,0.8
+Fumaça preta pelo escapamento,"Combustível excessivo, Filtro de ar sujo, Problema no sistema de injeção",0.1,0.3,0.5
+Barulho ao frear,"Pastilhas de freio desgastadas, Discos de freio empenados, Falta de lubrificação",0.3,0.5,0.7
+Faróis não funcionam,"Fusível queimado, Lâmpada queimada, Problema na fiação elétrica",0.2,0.4,0.6
+Aquecimento do motor,"Ventoinha do radiador com problema, Termostato defeituoso, Falta de líquido de arrefecimento",0.2,0.4,0.6
+Vazamento de óleo,"Junta do motor desgastada, Tampa do óleo mal colocada, Filtro de óleo com defeito",0.2,0.4,0.7
+Suspensão batendo,"Amortecedores desgastados, Buchas danificadas, Mola da suspensão quebrada",0.2,0.5,0.8
+Vidros elétricos não funcionam,"Motor do vidro elétrico com defeito, Fusível queimado, Problema na fiação",0.3,0.5,0.7
+Cheiro de gasolina no interior,"Vazamento no tanque de combustível, Mangueira de combustível solta, Tampa do tanque mal fechada",0.1,0.3,0.6
+Bateria descarregando rapidamente,"Alternador com defeito, Bateria velha",0.2,0.4,0.6
+Desempenho ruim no ar-condicionado,"Fluido refrigerante baixo, Compressor com problema",0.2,0.5,0.7
+Desgaste irregular nas pastilhas de freio,"Pinças de freio defeituosas, Discos de freio empenados",0.3,0.5,0.7
+Falha no limpador de para-brisas,"Motor do limpador com defeito, Problema na fiação elétrica, Fusível queimado",0.2,0.4,0.6
+Faróis baixos,"Lâmpadas desgastadas, Problemas de ajuste do farol",0.1,0.3,0.5
+Pedal do acelerador preso,"Cabo do acelerador desgastado, Pedal de acelerador defeituoso",0.1,0.3,0.6
+Porta não fecha corretamente,"Fechadura desgastada, Alinhamento da porta incorreto",0.2,0.4,0.6
+Sistema de navegação não funciona,"Problema de software, Antena de GPS danificada",0.1,0.3,0.5
+Vidros embaçando rapidamente,"Problemas no sistema de desembaçamento, Falta de ventilação adequada",0.2,0.4,0.6
+Vibração na direção,"Desbalanceamento das rodas, Pneus desgastados, Amortecedores desgastados",0.3,0.5,0.7
+Câmbio de marchas duros,"Cabos de câmbio desgastados, Embreagem mal ajustada",0.2,0.4,0.6
+Cintos de segurança não retraem,"Mecanismo de retração defeituoso, Acúmulo de sujeira",0.2,0.4,0.6
+Luz interna não acende,"Fusível queimado, Lâmpada queimada, Problema na fiação",0.1,0.3,0.5
+Marcha lenta irregular,"Válvula de controle de ar inativa, Sensor de fluxo de ar defeituoso",0.2,0.4,0.7
+Motor não acelera,"Filtro de ar entupido, Injetores de combustível sujos",0.2,0.4,0.6
+Oscilação do motor,"Velas de ignição defeituosas, Bobina de ignição com problema",0.2,0.4,0.7
+Porta-malas não abre,"Trava do porta-malas com defeito, Problema na chave",0.1,0.3,0.5
+Problema nos faróis,"Relé dos faróis defeituoso, Interruptor de farol com problema",0.1,0.3,0.5
+Volante desalinhado,"Desalinhamento do eixo, Danos na suspensão",0.2,0.4,0.7
+Luz de freio não acende,"Lâmpada queimada, Interruptor de freio com defeito, Problema na fiação",0.2,0.4,0.6
+Ar quente não funciona,"Termostato defeituoso, Válvula de controle de calor com problema",0.2,0.3,0.5
+Banco não ajusta,"Motor do banco elétrico defeituoso, Trava do banco desgastada",0.2,0.4,0.6
+Cheiro de queimado,"Correia desgastada, Vazamento de óleo",0.2,0.4,0.6
+Câmera de ré não funciona,"Problema na fiação, Câmera com defeito",0.1,0.3,0.5
+Desempenho fraco ao frear,"Fluido de freio baixo, Pastilhas de freio desgastadas",0.3,0.5,0.7
+Falha na luz de ré,"Lâmpada queimada, Sensor de ré defeituoso",0.2,0.4,0.6
+Luz do ABS acesa,"Sensor de velocidade da roda com defeito, Bomba ABS com problema",0.1,0.3,0.5
+Retrovisores não ajustam,"Motor do retrovisor com defeito, Botão de ajuste com problema",0.2,0.4,0.6
+Rádio não liga,"Fusível queimado, Problema na fiação, Rádio defeituoso",0.2,0.4,0.7
+Sistema de chave não reconhecido,"Bateria da chave fraca, Problema no receptor da chave",0.2,0.4,0.6
+
+
+
