@@ -1,0 +1,28 @@
+Vou mandar algumas linhas de csv que tem os seguintes campos: problema e possíveis causas. Olhe como fiz.
+
+Ar condicionado fraco,"Filtro sujo, Compressor com mal funcionamento, Mal funcionamento da ventoinha"
+Ar-condicionado não funciona,Filtro de ar entupido
+Barulho estranho no motor,"Correia dentada desgastada, Problemas no alternador"
+Barulho no motor,"Pressão incorreta, Correia dentada desgastada, Óleo baixo"
+Carro puxando para um lado,"Desalinhamento, Pressão dos pneus desiguais"
+Dificuldade na ignição,Bateria fraca
+Direção pesada,"Fluido da direção hidráulica baixo, Fluido da direção hidráulica baixo, Fluido da direção hidráulica baixo, Alinhamento incorreto, Correia da direção hidráulica solta"
+Falha no indicador de combustível,"Boia encharcada, Sensor queimado"
+Falha no sistema de freios,"Pastilhas de freio gastas, Pastilhas de freio gastas"
+Fumaça branca pelo escapamento,"Junta do cabeçote queimada, Sensor de oxigênio defeituoso, Junta do cabeçote queimada, Problema no motor, Problema no motor"
+Luz de alerta acesa,"Sensor de oxigênio defeituoso, Catalisador com problema, Falha no sistema de injeção eletrônica"
+Luzes do painel piscando,"Fusível queimado, Alternador com problema, Fusível queimado, Correia solta, Alternador com problema"
+Meu carro não está ligando,"Bateria descarregada, Cabo da bateria solto"
+Motor falhando,Velas de ignição desgastadas
+Perda de potência,Módulo de controle do motor
+Pneu esvaziando muito rápido,Pneu furado
+Pneus desgastando rapidamente,"Alinhamento incorreto, Alinhamento incorreto, Alinhamento incorreto, Alinhamento incorreto"
+Problemas ao engatar marcha,"Fluido da embreagem baixo, Vazamento de óleo na caixa de câmbio, Quebra do cabo de embreagem"
+Ruído na suspensão,Amortecedor danificado
+Ruídos e vibrações no pedal de freio,"Pastilhas desgastadas, Discos empenados, Tambores empenados"
+Saindo fumaça do capô,"Superaquecimento, Superaquecimento, Superaquecimento, Mangueiras ressecadas ou furadas"
+Temperatura do motor muito alta,"Líquido de arrefecimento baixo, Thermostato com defeito, Radiador com vazamento"
+Vibração ao dirigir,"Desbalanceamento das rodas, Alinhamento incorreto, Amortecedor danificado"
+
+Crie mais 10 linhas seguindo essa mesma estrutura?
+
