@@ -1,0 +1,61 @@
+Problema,Possíveis causas,Peça relacionada,Preço Médio (R$)
+Falha no indicador de combustível,Boia encharcada,Boia,275
+Falha no indicador de combustível,Sensor queimado,Sensor,350
+Perda de potência,Módulo de controle do motor,Módulo de controle do motor,1650
+Saindo fumaça do capô,Superaquecimento,Líquido de arrefecimento,100
+Saindo fumaça do capô,Superaquecimento,Óleo,250
+Saindo fumaça do capô,Superaquecimento,Válvula termostática,500
+Saindo fumaça do capô,Mangueiras ressecadas ou furadas,Mangueiras,300
+Ruídos e vibrações no pedal de freio,Pastilhas desgastadas,Pastilha,275
+Ruídos e vibrações no pedal de freio,Discos empenados,Disco de freio,475
+Ruídos e vibrações no pedal de freio,Tambores empenados,Tambores,350
+Ar condicionado fraco,Filtro sujo,Filtro,100
+Ar condicionado fraco,Compressor com mal funcionamento,Compressor do ar,1750
+Ar condicionado fraco,Mal funcionamento da ventoinha,Ventoinha com defeito,700
+Pneu esvaziando muito rápido,Pneu furado,Pneu,475
+Problemas ao engatar marcha,Fluido da embreagem baixo,Embreagem,1650
+Problemas ao engatar marcha,Vazamento de óleo na caixa de câmbio,Caixa de câmbio,4000
+Problemas ao engatar marcha,Quebra do cabo de embreagem,Embreagem,200
+Meu carro não está ligando,Bateria descarregada,Bateria,400
+Meu carro não está ligando,Cabo da bateria solto,Bateria,400
+Motor falhando,Velas de ignição desgastadas,Vela de ignição,275
+Temperatura do motor muito alta,Líquido de arrefecimento baixo,Radiador,650
+Temperatura do motor muito alta,Thermostato com defeito,Termostato,400
+Temperatura do motor muito alta,Radiador com vazamento,Radiador,1200
+Carro puxando para um lado,Desalinhamento,Eixos do carro,600
+Carro puxando para um lado,Pressão dos pneus desiguais,Pneus,75
+Luz de alerta acesa,Sensor de oxigênio defeituoso,Sensor de oxigênio,650
+Luz de alerta acesa,Catalisador com problema,Catalisador,2500
+Luz de alerta acesa,Falha no sistema de injeção eletrônica,Injeção eletrônica,900
+Barulho estranho no motor,Correia dentada desgastada,Correia dentada,850
+Barulho estranho no motor,Problemas no alternador,Alternador,1050
+Barulho no motor,Pressão incorreta,Cabeçote do motor,2982
+Falha no sistema de freios,Pastilhas de freio gastas,Pastilhas de freio,4006
+Pneus desgastando rapidamente,Alinhamento incorreto,Pneus,980
+Ruído na suspensão,Amortecedor danificado,Amortecedor,2374
+Vibração ao dirigir,Desbalanceamento das rodas,Rodas,2982
+Pneus desgastando rapidamente,Alinhamento incorreto,Pneus,151
+Ar-condicionado não funciona,Filtro de ar entupido,Filtro de ar,3877
+Luzes do painel piscando,Fusível queimado,Fusível,132
+Luzes do painel piscando,Alternador com problema,Alternador,980
+Fumaça branca pelo escapamento,Junta do cabeçote queimada,Junta do cabeçote,2982
+Direção pesada,Fluido da direção hidráulica baixo,Bomba de direção,2754
+Falha no sistema de freios,Pastilhas de freio gastas,Pastilhas de freio,4556
+Luzes do painel piscando,Fusível queimado,Fusível,1910
+Fumaça branca pelo escapamento,Sensor de oxigênio defeituoso,Sensor de oxigênio,3820
+Luzes do painel piscando,Correia solta,Correia dentada,3820
+Dificuldade na ignição,Bateria fraca,Bateria,1079
+Fumaça branca pelo escapamento,Junta do cabeçote queimada,Junta do cabeçote,817
+Vibração ao dirigir,Alinhamento incorreto,Pneus,162
+Vibração ao dirigir,Amortecedor danificado,Amortecedor,2394
+Fumaça branca pelo escapamento,Problema no motor,Junta do cabeçote,1079
+Pneus desgastando rapidamente,Alinhamento incorreto,Pneus,642
+Direção pesada,Fluido da direção hidráulica baixo,Bomba de direção,4237
+Fumaça branca pelo escapamento,Problema no motor,Junta do cabeçote,1910
+Direção pesada,Fluido da direção hidráulica baixo,Bomba de direção,3559
+Direção pesada,Alinhamento incorreto,Barras de direção,3002
+Barulho no motor,Correia dentada desgastada,Correia dentada,3559
+Barulho no motor,Óleo baixo,Bomba de óleo,1478
+Luzes do painel piscando,Alternador com problema,Alternador,2754
+Direção pesada,Correia da direção hidráulica solta,Correia da direção hidráulica,642
+Pneus desgastando rapidamente,Alinhamento incorreto,Pneus,797
