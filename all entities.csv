@@ -1,0 +1,43 @@
+cidades,Diadema
+cidades,Osasco
+cidades,São Paulo,SP
+cpf,cpf,/([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/,/[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}/
+dica,dica
+filtro_de_ar,Dificuldade de ventilação
+filtro_de_ar,Mau cheiro
+filtro_de_ar,Falta de manutenção
+motor,Falha na injeção elêtronica
+motor,Combustivel adulterado
+motor,Vazamento de flúidos
+motor,Folga de correias
+motor,Velas com defeito
+pecas,Capo
+pecas,Ar condicionado
+pecas,Radiador
+pecas,Motor
+pecas,Freio
+pecas,Escapamento
+pecas,Amortecedor dianteiro
+pecas,Vela de ignição
+pecas,Disco de freio
+pecas,Filtro de ar
+pecas,Turbina
+pecas,Roda
+pecas,Pneu
+pecas,Para-lama
+pecas,Para-Brisa
+possivel-causa
+
+radiador,Vazamento de fluido de arrefecimento,Vazamento de flúido
+radiador,Alto consumo de combustivel,Consumo de combustivel
+respostas,Sim,sim,yes
+respostas,Não,não ,no
+start,/start
+Turbinas,Falha de lubrificação
+Turbinas,Restrições na entrada e na saida de óleo
+Turbinas,Corpo estranho
+velas_de_ignicao,Acúmulo de residuos
+velas_de_ignicao,gap incorreto
+velas_de_ignicao,Fiação danificada
+velas_de_ignicao,desgaste
+velas_de_ignicao,Superaquecimento

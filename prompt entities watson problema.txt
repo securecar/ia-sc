@@ -1,0 +1,22 @@
+Vou te passar um problema veicular e você poderia escrever 5 sinônimos desse problema? Não mude o problema, só as palavras mesmo como sinônimos.
+
+Veja o problema: Vibração ao dirigir
+
+Daí você vai montar uma linha csv, escrito "problema" como primeira palavra, daí segundo valor sendo o problema (nesse exemplo "vibração ao dirigir"), e em seguida mais 10 valores que, cada um é um sinonimo.
+
+Vou dar um exemplo: 
+
+problema,Vibração ao dirigir,Tremores ao conduzir,Oscilações durante a direção,Vibrações no volante,Agitação ao dirigir,Balançar ao conduzir,Solavancos durante a direção,Tremulação ao dirigir,Vibrações no automóvel,Instabilidade ao conduzir,Chacoalhar ao dirigir
+
+Agora faça com os problemas abaixo e me mande em formato csv:
+
+Dificuldade ao trocar de marcha
+Desgaste irregular nos pneus
+Fumaça preta pelo escapamento
+Barulho ao frear
+Faróis não funcionam
+Aquecimento do motor
+Vazamento de óleo
+Suspensão batendo
+Vidros elétricos não funcionam
+Cheiro de gasolina no interior

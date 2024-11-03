@@ -96,31 +96,44 @@ def montar_dicionario_pecas(resultado, pecas_dict):
     return peca_counts
 
 def inserir_conserto(resultado, pecas, user_id):
-    sql = f"insert into t_securecar_conserto(dt_conserto, ds_conserto, vl_conserto, id_usuario) values (to_date(SYSDATE, 'DD-MM-YYYY'), :resultado, 0, :user_id) returning id_conserto into :id"
+    sql = """
+    insert into t_securecar_conserto(dt_conserto, ds_conserto, vl_conserto, id_usuario)
+    values (SYSDATE, :resultado, 0, :user_id)
+    returning id_conserto into :id
+    """
 
-    input = {
-        "resultado" : resultado,
-        "user_id" : user_id
-    }
     with get_conexao() as con:
         with con.cursor() as cur:
-            cur.execute(sql, input)
-        con.commit()
-    return input['id']
-        
+            id_conserto_var = cur.var(db.NUMBER)
+            params = {
+                "resultado": resultado,
+                "user_id": user_id,
+                "id": id_conserto_var
+            }
+            cur.execute(sql, params)
+            con.commit()
+            id_conserto = id_conserto_var.getvalue()
+            print("Valor retornado de id_conserto:", id_conserto, type(id_conserto))
+            if isinstance(id_conserto, (list, tuple)):
+                id_conserto = id_conserto[0]
+                print("id_conserto após extração:", id_conserto, type(id_conserto))
+    return id_conserto
 
 def inserir_peca_conserto(id_conserto, pecas_encontradas: dict):
     sql = "insert into t_securecar_peca_conserto(id_conserto, id_peca) values(:id_conserto, :id_peca)"
-    dados = []
-    for id_peca, quantidade in pecas_encontradas.items():
-        for _ in range(quantidade):
-            dados.append({"id_conserto": id_conserto, "id_peca": id_peca})
 
     with get_conexao() as con:
         with con.cursor() as cur:
-            cur.executemany(sql, dados)
-        con.commit()
-
+            try:
+                for id_peca, quantidade in pecas_encontradas.items():
+                    for _ in range(quantidade):
+                        params = {"id_conserto": id_conserto, "id_peca": id_peca}
+                        print("Inserindo com params:", params)
+                        cur.execute(sql, params)
+                con.commit()
+            except Exception as e:
+                con.rollback()
+                print(f"Erro ao inserir peças do conserto: {e}")
 
 app = Flask(__name__)
 
@@ -148,10 +161,18 @@ def prever():
 
         quilometragem_km = quilometragem + 'km'
         resultado = prever_causas(problema, quilometragem_km)
+        print(resultado)
         lista_pecas = pecas()
         pecas_encontradas = montar_dicionario_pecas(resultado, lista_pecas)
         id_conserto = inserir_conserto(resultado=resultado, pecas=pecas, user_id=id_usuario)
-        inserir_peca_conserto(id_conserto=id_conserto, pecas_encontradas=pecas_encontradas)
+        
+        if id_conserto:
+            print(f"Conserto inserido com sucesso. ID: {id_conserto}")
+            inserir_peca_conserto(id_conserto, pecas_encontradas)
+        else:
+            print("Falha ao inserir o conserto.")
+        
+        # inserir_peca_conserto(id_conserto=id_conserto, pecas_encontradas=pecas_encontradas)
         
         print(pecas_encontradas)
         
