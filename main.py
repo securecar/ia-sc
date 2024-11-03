@@ -2,9 +2,10 @@
 
 # %%
 import oracledb as db
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 import pickle
 import re
+from criar_pdf import gerar_conserto_por_id_conserto
 
 
 # Carregar o modelo e os transformadores aprimorados
@@ -137,6 +138,50 @@ def inserir_peca_conserto(id_conserto, pecas_encontradas: dict):
 
 app = Flask(__name__)
 
+def valor_total(id_conserto: int):
+    """
+    Calcula o valor total do conserto somando o valor de cada peça utilizada 
+    sem considerar a quantidade e atualiza o campo vl_conserto na tabela t_securecar_conserto.
+    
+    :param id_conserto: ID do conserto a ser atualizado.
+    :return: Valor total calculado ou None se ocorrer um erro.
+    """
+    try:
+        with get_conexao() as con:
+            with con.cursor() as cur:
+                # Consulta para obter o valor de cada peça associada ao conserto
+                sql = '''
+                    SELECT p.vl_peca
+                    FROM t_securecar_peca_conserto pc
+                    JOIN t_securecar_peca p ON pc.id_peca = p.id_peca
+                    WHERE pc.id_conserto = :id_conserto
+                '''
+                cur.execute(sql, id_conserto=id_conserto)
+                resultados = cur.fetchall()
+                
+                if not resultados:
+                    print(f"Nenhuma peça encontrada para o id_conserto {id_conserto}.")
+                    return None
+                
+                # Calcula o valor total somando o valor de cada peça
+                total = (sum(vl_peca for (vl_peca,) in resultados) / len(resultados)) * 1.15
+                print(f"Valor total calculado para id_conserto {id_conserto}: R$ {total:.2f}")
+                
+                # Atualiza o valor total no conserto
+                update_sql = '''
+                    UPDATE t_securecar_conserto
+                    SET vl_conserto = :total
+                    WHERE id_conserto = :id_conserto
+                '''
+                cur.execute(update_sql, total=total, id_conserto=id_conserto)
+                con.commit()
+                
+                # return total
+    except db.DatabaseError as e:
+        error, = e.args
+        print(f"Erro ao calcular e atualizar o valor total do conserto: {error.message}")
+        return None
+
 
 @app.route('/prever', methods=['POST'])
 def prever():
@@ -169,6 +214,7 @@ def prever():
         if id_conserto:
             print(f"Conserto inserido com sucesso. ID: {id_conserto}")
             inserir_peca_conserto(id_conserto, pecas_encontradas)
+            valor_total(id_conserto)
         else:
             print("Falha ao inserir o conserto.")
         
@@ -179,6 +225,12 @@ def prever():
         return jsonify({
             "text": resultado,
         })
+
+@app.route('/pdf/<int:id_conserto>', methods=['GET'])
+def enviar_pdf(id_conserto):
+    gerar_conserto_por_id_conserto(id_conserto)
+    return send_file('resultado.pdf', as_attachment=True)
+
 
    
 

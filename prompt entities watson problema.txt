@@ -10,13 +10,18 @@ problema,Vibração ao dirigir,Tremores ao conduzir,Oscilações durante a dire�
 
 Agora faça com os problemas abaixo e me mande em formato csv:
 
-Dificuldade ao trocar de marcha
-Desgaste irregular nos pneus
-Fumaça preta pelo escapamento
-Barulho ao frear
-Faróis não funcionam
-Aquecimento do motor
-Vazamento de óleo
-Suspensão batendo
-Vidros elétricos não funcionam
-Cheiro de gasolina no interior
+Oscilação do motor
+Porta-malas não abre
+Problema nos faróis
+Volante desalinhado
+Luz de freio não acende
+Ar quente não funciona
+Banco não ajusta
+Cheiro de queimado
+Câmera de ré não funciona
+Desempenho fraco ao frear
+Falha na luz de ré
+Luz do ABS acesa
+Retrovisores não ajustam
+Rádio não liga
+Sistema de chave não reconhecido
