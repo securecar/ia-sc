@@ -43,8 +43,7 @@ def prever_causas(problema_input, quilometragem_input):
 
     # Verificar se há causas previstas
     if causas_previstas and causas_previstas[0]:
-        print(f"Possíveis causas para '{
-              problema_input}' com quilometragem '{quilometragem_input}':")
+        print(f"Possíveis causas para '{problema_input}' com quilometragem '{quilometragem_input}':")
         for causa in causas_previstas[0]:
             print(f"- {causa}")
         return f"Possíveis causas para {str(problema_input).lower()} com quilometragem {quilometragem_input} são: {', '.join(causas_previstas[0])} "
